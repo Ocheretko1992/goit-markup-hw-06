@@ -204,28 +204,12 @@ button {
 
 /* Form Footer */
 
-.form-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.form-footer{
   margin-left: 80px;
 }
-.input-footer {
-  width: 264px;
-  height: 40px;
-}
-
-.footer-modal-btn {
-  width: 165px;
-  height: 40px;
-  padding: 8px 24px;
-  gap: 16px;
-  background: #4d5ae5;
-  border-radius: 4px;
-  color: var(--brand-color);
-}
 .paragraf-form-footer {
-  width: 75px;
+  display: inline-block;
+  width: 100%;
   height: 24px;
   font-family: "Roboto";
   font-weight: 500;
@@ -234,9 +218,62 @@ button {
   letter-spacing: 0.02em;
   color: var(--brand-color);
   margin-bottom: 16px;
+} 
+.flexis{
+  display: flex;
+  gap: 24px;
 }
-.position-footer{
-  display: block;
+.input-footer {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
+  outline: none;
+  background-color: var(--secondary-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-footer:focus{
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: var(--interactive-color);
+}
+.footer-modal-btn {
+  border: none;
+  width: 165px;
+  height: 40px;
+  padding: 8px 64px 8px 24px;
+  background: var(--interactive-color);
+  border-radius: 4px;
+}
+.text-centrik{
+  width: 77px;
+  height: 24px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--brand-color);
+}
+.position-excentrik{
+  position: relative;
+  width: 165px;
+}
+.excentrik{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  right: 24px;
+  background-image: url(../images/webstudio/img.svg/Frame\ 3.svg);
+  background-repeat: no-repeat;
+  
 }
 /* /Form Footer */
 
@@ -423,15 +460,11 @@ button {
 .portfolio-item:hover .hidden-text {
   transform: translateY(0);
 }
-
 .img-portfolio:hover,
-
-
-
-
 .img-portfolio:focus {
-  box-shadow: 0px 1px 6px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%),
-    0px 2px 1px rgb(46 47 66 / 8%);
+  box-shadow: 0px 1px 6px rgb(46 47 66 / 8%),
+   0px 1px 1px rgb(46 47 66 / 16%),
+  0px 2px 1px rgb(46 47 66 / 8%);
 }
 .our-offers {
   padding-left: 16px;
@@ -449,10 +482,9 @@ button {
   padding-top: 192px;
   padding-bottom: 192px;
   background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/webstudio/background\ of\ the\ hero.jpg);
+   rgba(46, 47, 66, 0.7),
+   rgba(46, 47, 66, 0.7)),
+  url(../images/webstudio/background\ of\ the\ hero.jpg);
   background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
@@ -507,7 +539,8 @@ button {
 .team-item {
   background: var(--brand-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  0px 1px 1px rgba(46, 47, 66, 0.16),
+  0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
 .social-list {
@@ -992,9 +1025,8 @@ header {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--interactive-color);
-  border-color: var(--color-logo);
   border: 1px solid #e7e9fc;
-  transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms, background-color 250ms,box-shadow 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 .all-buttons:hover,
 .all-buttons:focus {
@@ -1003,6 +1035,7 @@ header {
   border-color: transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: color 250ms, background-color 250ms,box-shadow 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 .paragraf-text-portfolio {
   color: var(--paragraph-color);
