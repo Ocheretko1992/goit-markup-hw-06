@@ -199,11 +199,17 @@ button {
 
 /* Form Footer */
 
+.wrapper-forms{
+margin-left: 80px;
+
+}
 .form-footer{
-  margin-left: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 .paragraf-form-footer {
-  display: inline-block;
   width: 100%;
   height: 24px;
   font-family: "Roboto";
@@ -214,10 +220,7 @@ button {
   color: var(--brand-color);
   margin-bottom: 16px;
 } 
-.flexis{
-  display: flex;
-  gap: 24px;
-}
+
 .input-footer {
   width: 264px;
   height: 40px;
@@ -239,42 +242,27 @@ button {
   border-color: var(--interactive-color);
 }
 .footer-modal-btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 24px;
+  padding: 8px 24px 8px;
   border: none;
   width: 165px;
   height: 40px;
-  padding: 8px 64px 8px 24px;
+  color: var(--brand-color);
   background: var(--interactive-color);
   border-radius: 4px;
   transition: background-color 250ms var(--cubic-bezier);
 }
 .footer-modal-btn:hover{
   background-color: #404BBF;
-
 }
-.text-centrik{
-  width: 77px;
-  height: 24px;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--brand-color);
-}
-.position-excentrik{
-  position: relative;
-  width: 165px;
-}
-.excentrik{
-  position: absolute;
+.pages-footer{
   width: 24px;
-  height: 24px;
-  top: 10px;
-  right: 24px;
-  background-image: url(../images/webstudio/img.svg/Frame\ 3.svg);
-  background-repeat: no-repeat;
-  
+  height: 20px;
 }
+
 /* /Form Footer */
 
 /* Modal-Window */
@@ -634,6 +622,8 @@ button {
 }
 .container-two {
   display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .footer-list {
